@@ -1,0 +1,126 @@
+/* App.css */
+
+/* General styles for the App */
+.App {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e9f2f7;
+  text-align: center;
+}
+
+/* Title styling */
+h1 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form container styling */
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Input fields styling */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus input fields */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus {
+  border-color: #5f9ea0;
+  outline: none;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Button styling */
+button {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  background-color: #5f9ea0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+button[type="reset"] {
+  background-color: #f44336;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #4e8a84;
+}
+
+/* Reset button hover */
+button[type="reset"]:hover {
+  background-color: #e53935;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .App {
+    padding: 15px;
+  }
+
+  form {
+    padding: 20px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
